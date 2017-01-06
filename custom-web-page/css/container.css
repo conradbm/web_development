@@ -1,0 +1,228 @@
+/*
+File: container.css
+Written by: Blake Conrad
+Content: Just a basic container class. Gives some convenience to spawning simple customizeable containers.
+
+Structure of a containers margins:
+
+Margins:
++-------------+------+-----------------+------+-------------+
+|     25%     | 0.5% |       49%       | 0.5% |     25%     |
++-------------+------+-----------------+------+-------------+
+
+*/
+
+  /**********************************************/
+ /************ Main Container Class ************/
+/**********************************************/
+
+.container{
+    /* Margins */
+    margin-left:5px;
+    margine-right:auto;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimentions */
+    height:20em;
+    width:100%;
+    
+    /* Positioning */
+
+    /* Coloring */
+    background-color:darkslategray;
+    
+}
+
+.header-container{
+    /* Margins */
+    margin-left:5px;
+    margine-right:auto;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimentions */
+    height:10em;
+    width:100%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+
+}
+  /***********************************************/
+ /************ Container Accessories ************/
+/***********************************************/
+.container > h2 {
+    /* Font */
+    font-family: fantasy;
+    
+    /* Coloring */
+    color:snow;
+}
+
+.container > ul > li {
+    /* Font */
+    font-family:fantasy;
+    
+    /* Coloring */
+    color:black;
+}
+
+  /**********************************************/
+ /************ Half Left Container *************/
+/**********************************************/
+.half-left{
+    /* Margins */
+    margin:auto;
+    
+    /* Positioning */
+    position:left;
+    float:left;
+
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:49%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}
+
+  /*********************************************************/
+ /************ Half Left Container Accessories ************/
+/*********************************************************/
+.half-left > h2 {
+    /* Padding */
+    padding-left:.5em;
+    
+    /* Font */
+    font-family: fantasy;
+    
+    /* Coloring */
+    color:snow;
+}
+
+  /************************************************/
+ /************ Quarter Left Container ************/
+/************************************************/
+.quarter-left{
+    /* Margins */
+    margin-left:1%;
+    margine-right:1%;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Positioning */
+    float:left;
+    
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:22%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}
+
+  /**********************************************/
+ /************ Half Right Container ************/
+/**********************************************/
+.half-right{
+    /* Margins */
+    margin-left:5px;
+    margine-right:auto;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Positioning */
+    float:right;
+
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:49%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}
+
+  /*************************************************/
+ /************ Quarter Right Container ************/
+/*************************************************/
+.quarter-right{
+    /* Margins */
+    margin-left:1%;
+    margine-right:1%;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Positioning */
+    float:right;
+
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:22%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}
+
+  /*************************************************/
+ /************ Half Centered Container ************/
+/*************************************************/
+
+.half-centered-iso{
+    /* Margins */
+    margin-left:25.5%;
+    margine-right:auto;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Positioning */
+    float:left;
+
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:49%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}
+.half-centered-joined{
+    /* Margins */
+    margin-left:1%;
+    margine-right:1%;
+    margin-bottom:.5em;
+    margine-top:auto;
+    
+    /* Positioning */
+    float:left;
+
+    /* Borders */
+    border-radius: 10px;
+
+    /* Dimensions */
+    height:20em;
+    width:53%;
+    
+    /* Coloring */
+    background-color:darkslategray;
+}

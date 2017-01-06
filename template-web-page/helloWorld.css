@@ -1,0 +1,75 @@
+/*
+*/
+
+header{
+	text-align:left;
+	color:#AEBD38;
+	background-color: #505160;
+    border-radius: 10px;
+    padding-left:10px;
+    padding-bottom:10px;
+}
+header #logo{
+    position:relative;
+    top: 10px;
+    left: 2px;
+}
+footer{
+	text-align:left;
+	color:#AEBD38;
+	background-color: #505160;
+    border-radius: 10px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+body {
+	background-color: #68829E;	/*	Use the Color Picker to find the hex code of your favorite color
+									http://www.w3schools.com/tags/ref_colorpicker.asp */
+}
+body p {
+	padding-left: 2em;
+}
+
+#assignments li{
+    margin-top:5px;
+}
+#assignments li, li a{						/* Define the formatting for the links to the labs */
+	list-style: none;
+	background-color: #498234;
+	color: #AEBD38;
+	border-radius: 3px;
+	padding: 2px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#assignments h2{
+	color: #AEBD38;
+	line-height: 30px;
+	text-align: center;
+}
+
+#assignments{			/* Define the formatting for the <div id="asssignments"> box */
+	width: 520px;
+    height:relative;
+	margin-top:10px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom:10px;
+	box-shadow: 0 2px 15px #505160;
+	min-height: 300px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #505160;
+    display: flex;
+    flex-direction: column;
+}
+#assignments ul {
+	float:left;
+	width: 150px;
+}
+
+hr{						/* Define the formatting for the <hr /> line between "Course Work" and lab links */
+	width: 100%;
+}
