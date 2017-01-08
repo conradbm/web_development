@@ -7,3 +7,17 @@ body {
     margin:0;
     background-color:#333;
 }
+
+#home{
+    display:inline;
+}
+
+#home p , h2, h4, h5{
+    color:snow;
+    font-family: fantasy;
+    padding-left:1%;
+    padding-top:1px;
+}
+#home hr{
+    width:100%;
+}

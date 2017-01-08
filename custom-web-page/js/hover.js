@@ -5,11 +5,10 @@ Content: Upon hover, an array of images should shuffle on a time interval.
 */
 
 // Create array of images.
-var images = ["images/logo.png",
-              "images/logo_2.png",
-              "images/logo_3.png",
-              "images/logo_4.png",
-              "images/coffee.png"];
+var images = ["images/coffee.png",
+              "images/coffee2.png",
+              "images/coffee3.png",
+              "images/coffee4.png"];
 
 // Default index set to 0.
 var curImageIndex = 0;
