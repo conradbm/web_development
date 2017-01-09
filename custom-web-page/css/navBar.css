@@ -10,7 +10,7 @@ Content: The custom navigation bar utilized in mySite.html.
     left:1em;
     border-radius: 10px;
     height:5.5em;
-    width:25sem;
+    width:90%;
     text-align: center;
     background-color:#333;
 }
@@ -74,6 +74,19 @@ Content: The custom navigation bar utilized in mySite.html.
 
 
 
+/*
+TITLE: Web Page Redux -- Assignment 1
+AUTHOR: Blake Conrad
+CREATE DATE: Jan 06 2017
+PURPOSE: 
+LAST MODIFIED ON: Jan 08 2016
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ JAN 06 2016 ~ Lauched the site.
+~ JAN 07 2016 ~ Edited the image buffering.
+~ JAN 08 2016 ~ Updated the site to be w3 compatible.
+*/
+
 /* Change the link color to #111 (black) on hover */
 .navBar li a:hover {
     background-color: darkslategray;
@@ -102,7 +115,8 @@ Content: The custom navigation bar utilized in mySite.html.
     display: none;
     position: absolute;
     background-color: #333;
-    min-width: 100%;
+    border-radius: 10px;
+    min-width: 25%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 

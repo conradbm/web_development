@@ -1,15 +1,14 @@
 /*
-File: container.css
-Written by: Blake Conrad
-Content: Just a basic container class. Gives some convenience to spawning simple customizeable containers.
-
-Structure of a containers margins:
-
-Margins:
-+-------------+------+-----------------+------+-------------+
-|     25%     | 0.5% |       49%       | 0.5% |     25%     |
-+-------------+------+-----------------+------+-------------+
-
+TITLE: Web Page Redux -- Assignment 1
+AUTHOR: Blake Conrad
+CREATE DATE: Jan 06 2017
+PURPOSE: 
+LAST MODIFIED ON: Jan 08 2016
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ JAN 06 2016 ~ Lauched the site.
+~ JAN 07 2016 ~ Edited the image buffering.
+~ JAN 08 2016 ~ Updated the site to be w3 compatible.
 */
 
   /**********************************************/
@@ -82,7 +81,7 @@ Margins:
   /*********************************************************/
  /************ Half Left Container Accessories ************/
 /*********************************************************/
-.half-left > h2 {
+.half-left > ul > li {
     /* Padding */
     padding-left:.5em;
     
@@ -90,7 +89,7 @@ Margins:
     font-family: fantasy;
     
     /* Coloring */
-    color:snow;
+    color:yellow;
 }
 
   /************************************************/

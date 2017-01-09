@@ -1,7 +1,14 @@
 /*
-File: hover.js
-Written by: Blake Conrad
-Content: Upon hover, an array of images should shuffle on a time interval.
+TITLE: Web Page Redux -- Assignment 1
+AUTHOR: Blake Conrad
+CREATE DATE: Jan 06 2017
+PURPOSE: 
+LAST MODIFIED ON: Jan 08 2016
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ JAN 06 2016 ~ Lauched the site.
+~ JAN 07 2016 ~ Edited the image buffering.
+~ JAN 08 2016 ~ Updated the site to be w3 compatible.
 */
 
 // Create array of images.

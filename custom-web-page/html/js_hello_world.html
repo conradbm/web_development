@@ -2,7 +2,7 @@
 TITLE: Web Page Redux -- Assignment 1
 AUTHOR: Blake Conrad
 CREATE DATE: Jan 06 2017
-PURPOSE: To get started with HTML, CSS, and Javascript
+PURPOSE: 
 LAST MODIFIED ON: Jan 08 2016
 LAST MODIFIED BY: Blake Conrad
 MODIFICATION HISTORY:
@@ -19,9 +19,9 @@ MODIFICATION HISTORY:
         <!----------------->
         <!-- INCLUDE CSS -->
         <!----------------->
-        <link rel="stylesheet" type="text/css" href="css/mySite.css">
-        <link rel="stylesheet" type="text/css" href="css/navBar.css">
-        <link rel="stylesheet" type="text/css" href="css/container.css">
+        <link rel="stylesheet" type="text/css" href="../css/mySite.css">
+        <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+        <link rel="stylesheet" type="text/css" href="../css/container.css">
 
         <!----------------->
         <!-- INCLUDE JQ -->
@@ -32,8 +32,7 @@ MODIFICATION HISTORY:
         <!----------------->
         <!-- INCLUDE JS  -->
         <!----------------->
-        <script type="text/javascript" src="js/hover.js"></script>
-        <script type="text/javascript" src="js/mySite.js"></script>
+        <script type="text/javascript" src="../js/externalAlert.js"></script>
     </head>
     
     <body>
@@ -44,14 +43,12 @@ MODIFICATION HISTORY:
         <div class="navBar" id="myNavBar">    
             <ul class="navOptions">
                 <li> <img id="logo" 
-                          src="images/coffee2.png"
+                          src="../images/coffee2.png"
                           height="65"
                           width="65"
-                          alt=""
-                           onmouseenter="startImageCycle(this)"
-                           onmouseout="stopImageCycle(this)"></li>
+                          alt=""></li>
                 <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
-                <li class="active"><a href="mySite.html">Home</a></li>
+                <li class="active"><a href="../mySite.html">Home</a></li>
                 
                 <!-------------------------------------->
                 <!-- CREATE A DROP DOWN MENU ON HOVER -->
@@ -150,42 +147,10 @@ MODIFICATION HISTORY:
             </ul>
         </div>
         
-        
-        <!----------------------------------------->
-        <!-- Create Head Container               -->
-        <!----------------------------------------->
         <div class="header-container">
         </div>
-        
-        <!----------------------------------------->
-        <!-- Create Full Container               -->
-        <!----------------------------------------->
         <div class="container">
-            <div class="home">
-                <p>
-                    <h2> The Lobby </h2>
-                    <hr> <!-- Draw a horizontal line -->
-                    <h4>Grab some coffee, it's on the house.</h4>
-                    <h4>We hope you enjoy your stay.</h4> 
-                    <h5> &nbsp;&nbsp;&nbsp;&nbsp; - Staff of Team Blake Conrad&copy;.</h5> 
-                    <img style="padding-left:1%;"
-                         src="images/coffee.png"
-                         alt=""
-                         height="65" 
-                         width="65">
-                </p>
-            </div>
-        </div>
-    
-        <!------------------------------------------>
-        <!-- Create Half Containers               -->
-        <!------------------------------------------>
-        <div class="half-left">
-            <div class="home">
-                <h2> <a href="html/test_file.html">Blake's Test File</a> </h2>
-                <h2> <a href="html/js_hello_world.html">Blake's JS Alert </a> </h2>
-            </div>
-        </div><div class="half-right">
+            <h2>The home button will take you back to the lobby where the free coffee is at.</h2>
         </div>
     </body>
 </html>
