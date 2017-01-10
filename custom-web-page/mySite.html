@@ -1,38 +1,35 @@
-<!---
-TITLE: Web Page Redux -- Assignment 1
+<!--
+TITLE: Web Page Redux Assignment 1
 AUTHOR: Blake Conrad
 CREATE DATE: Jan 06 2017
-PURPOSE: To get started with HTML, CSS, and Javascript
+PURPOSE: 
 LAST MODIFIED ON: Jan 08 2016
 LAST MODIFIED BY: Blake Conrad
 MODIFICATION HISTORY:
 ~ JAN 06 2016 ~ Lauched the site.
 ~ JAN 07 2016 ~ Edited the image buffering.
 ~ JAN 08 2016 ~ Updated the site to be w3 compatible.
---->
+~ JAN 10 2016 ~ Updated to be w3 verifiable.
+-->
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Blake Conrad</title>
+        
+        <!-- GENERAL HOUSEKEEPING -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blake Conrad</title>
 
-        <!----------------->
         <!-- INCLUDE CSS -->
-        <!----------------->
         <link rel="stylesheet" type="text/css" href="css/mySite.css">
         <link rel="stylesheet" type="text/css" href="css/navBar.css">
         <link rel="stylesheet" type="text/css" href="css/container.css">
 
-        <!----------------->
         <!-- INCLUDE JQ -->
-        <!----------------->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
         </script>
 
-        <!----------------->
-        <!-- INCLUDE JS  -->
-        <!----------------->
+         <!-- INCLUDE JS -->
         <script type="text/javascript" src="js/hover.js"></script>
         <script type="text/javascript" src="js/mySite.js"></script>
         <script type="text/javascript" src="js/dropdown.js"></script>
@@ -40,9 +37,7 @@ MODIFICATION HISTORY:
     
     <body>
         
-        <!---------------------------->
-        <!-- CREATE A CUSTOM NAVBAR -->
-        <!---------------------------->
+         <!-- Create Custom Navigation Bar -->
         <div class="navBar" id="myNavBar">    
             <ul class="navOptions">
                 <li> <img id="logo" 
@@ -55,9 +50,7 @@ MODIFICATION HISTORY:
                 <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
                 <li class="active"><a href="mySite.html">Home</a></li>
                 
-                <!-------------------------------------->
-                <!-- CREATE A DROP DOWN MENU ON HOVER -->
-                <!-------------------------------------->
+                <!-- Dropdown Menu onHover -->
                 <li class="dropdown"><a href="#">Projects</a>
                     <div class="dropdown-content">
                         <ul>
@@ -156,18 +149,13 @@ MODIFICATION HISTORY:
         </div>
         
         
-        <!----------------------------------------->
-        <!-- Create Head Container               -->
-        <!----------------------------------------->
+         <!-- Create Header Container -->
         <div class="header-container">
         </div>
         
-        <!----------------------------------------->
-        <!-- Create Full Container               -->
-        <!----------------------------------------->
+        <!-- Create Full Container -->
         <div class="container">
             <div class="home">
-                <p>
                     <h2> The Lobby </h2>
                     <hr> <!-- Draw a horizontal line -->
                     <h4>Grab some coffee, it's on the house.</h4>
@@ -178,13 +166,10 @@ MODIFICATION HISTORY:
                          alt=""
                          height="65" 
                          width="65">
-                </p>
             </div>
         </div>
     
-        <!------------------------------------------>
-        <!-- Create Half Containers               -->
-        <!------------------------------------------>
+         <!-- Create Half Container -->
         <div class="container">
             <div class="home">
                 <h2> <a href="html/test_file.html">Blake's Test File</a> </h2>
