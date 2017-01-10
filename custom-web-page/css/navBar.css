@@ -1,8 +1,17 @@
 /*
-File: navBar.css
-Written by: Blake Conrad
-Content: The custom navigation bar utilized in mySite.html.
+TITLE: Web Page Redux -- Assignment 1
+AUTHOR: Blake Conrad
+CREATE DATE: Jan 06 2017
+PURPOSE: 
+LAST MODIFIED ON: Jan 08 2016
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ JAN 06 2016 ~ Lauched the site.
+~ JAN 07 2016 ~ Edited the image buffering.
+~ JAN 08 2016 ~ Updated the site to be w3 compatible.
+~ Jan 09 2016 ~ Updates for responsive navbar.
 */
+
 .navBar{
     font-family:fantasy;
     position: fixed;
@@ -73,33 +82,58 @@ Content: The custom navigation bar utilized in mySite.html.
 }
 
 
-
-/*
-TITLE: Web Page Redux -- Assignment 1
-AUTHOR: Blake Conrad
-CREATE DATE: Jan 06 2017
-PURPOSE: 
-LAST MODIFIED ON: Jan 08 2016
-LAST MODIFIED BY: Blake Conrad
-MODIFICATION HISTORY:
-~ JAN 06 2016 ~ Lauched the site.
-~ JAN 07 2016 ~ Edited the image buffering.
-~ JAN 08 2016 ~ Updated the site to be w3 compatible.
-*/
-
 /* Change the link color to #111 (black) on hover */
 .navBar li a:hover {
     background-color: darkslategray;
     border-radius: 10px;
 }
 
+.navBar li.icon {
+    display: none;
+}
 
-/* Mobile view not working atm. */
-@media screen and (min-width: 430px) {
-    /* STYLES HERE */
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    .navBar li:not(:first-child) {
+        display: none;
+    }
+    /* I can add this later. Margins are too messy.
+    #myName {
+        display:block;
+    }
+    */
+    .navBar li.icon {
+    float: right;
+    display: inline-block;
+  }
     .navBar {
-        /* background-color:aqua; */
-        /* more styles */
+        width:90%;
+    }
+}
+
+/*
+The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the navbar look good on small screens 
+*/
+@media screen and (max-width:680px) {
+    .navBar.responsive {
+        position: relative;
+    }
+    
+    .navBar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+    .navBar.responsive li {
+    float: none;
+    display: inline;
+    }
+    
+    .navBar.responsive li a {
+    display: block;
+    text-align: left;
     }
 }
 
@@ -128,7 +162,7 @@ MODIFICATION HISTORY:
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
     display: block;

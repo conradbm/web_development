@@ -14,6 +14,7 @@ MODIFICATION HISTORY:
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blake Conrad</title>
 
         <!----------------->
@@ -34,6 +35,7 @@ MODIFICATION HISTORY:
         <!----------------->
         <script type="text/javascript" src="js/hover.js"></script>
         <script type="text/javascript" src="js/mySite.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
     </head>
     
     <body>
@@ -147,6 +149,9 @@ MODIFICATION HISTORY:
                 </li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Resources</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="addResponsiveFunction()">&#9776;</a>
+                </li>
             </ul>
         </div>
         
@@ -180,12 +185,12 @@ MODIFICATION HISTORY:
         <!------------------------------------------>
         <!-- Create Half Containers               -->
         <!------------------------------------------>
-        <div class="half-left">
+        <div class="container">
             <div class="home">
                 <h2> <a href="html/test_file.html">Blake's Test File</a> </h2>
                 <h2> <a href="html/js_hello_world.html">Blake's JS Alert </a> </h2>
             </div>
-        </div><div class="half-right">
+        </div><div class="half-left">
         </div>
     </body>
 </html>
