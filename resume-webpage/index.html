@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
+  <title>Blake Conrad</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -23,40 +24,169 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="https://github.com/conradbm">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/blake-conrad-5b240a123?trk=hp-identity-photo">Linked-in</a></li>
-          <li><a href="https://cs.iupui.edu/~bmconrad/n341">IUPUI</a></li>
-
+            <li>
+                <a href="https://github.com/conradbm">
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/blake-conrad-5b240a123?trk=hp-identity-photo">
+                Linked-In
+                </a>
+            </li>
+            <li>
+                <a href="https://cs.iupui.edu/~bmconrad/n341">
+                    IUPUI
+                </a>
+            </li>
+            
+            <li class="dropdown-submenu">
+                <a class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#">
+                    Data Science Communities <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-item">
+                        <a href="https://www.kaggle.com/bmconrad">
+                            Kaggle
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="dropdown-submenu">
+                <a class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#">Stack Exchange Communities <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-item">
+                        <a href="http://stats.stackexchange.com/users/142748/bmc">
+                            Statistics Stack Exchange</a></li>
+                    <li class="dropdown-item">
+                        <a href="http://stackoverflow.com/users/4304526/bmc">
+                            Stackoverflow
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
       </li>
     </ul>
+      
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Download Content</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Hi, I'm Blake!</h1> 
-    <p><h3>Education:</h3>
-        <ul>
-            <li>B.S. in Computer Science.</li>
-            <li>Minor in Mathematics.</li>
-            <li>Interned with the Department of Defense, working in Java, HTML/CSS/JS/AJAX/PHP, working and deploying in Linux based systems.</li>
-        </ul>
-      <h3>Hobbies:</h3>
-      <ul>
-            <li>Competing in Kaggle Competitions.</li>
-            <li>Data Science.</li>
-            <li>Predictive Modeling.</li>
-            <li>Statistics.</li>
-            <li>Reading.</li>
-        </ul>
-      </p> 
-  </div>
-    <hr>
-</div></body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hi, I'm Blake!</h1> 
+          <hr>
+        <p><h3>Education:</h3>
+            <ul>
+                <li>B.S. in Computer Science from Purdue University.</li>
+                <li>Minor in Mathematics.</li>
+                <li>Interned with the Department of Defense.</li>
+            </ul>
+          <hr>
+          <h3>Hobbies:</h3>
+          <ul>
+
+              <li><h4>Computed Science Related</h4>
+                <ul>
+                    <li>Competing in Kaggle Competitions.</li>
+                    <li>Contributing to Stack Exchange Communities.</li>
+                    <li>Data Science.</li>
+                </ul>
+              </li>
+
+            <li><h4>Non-Computer Science Related</h4>
+                <ul>
+                    <li>Quiet cup of coffee with a good book.</li>
+                    <li>Spending time with family and friends.</li>
+                </ul>
+              </li>
+            </ul>
+
+          <hr>
+
+          <h3>Language Exposure:</h3>
+          <ul>
+              <li><h4>Object Oriented Programming</h4>
+                <ul>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                </ul>
+              </li>
+
+              <li><h4>Procedural Scripting Programming</h4>
+                <ul>
+                  <li>R</li>
+                  <li>Batch (MS-DOS/Windows)</li>
+                  <li>Bash (Unix/MAC)</li>
+                  <li>Cshell (Linux)</li>
+                </ul>
+              </li>
+
+              <li><h4>Internet Programming</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>Bootstrap</li>
+                  <li>PHP</li>
+                  <li>AJAX</li>
+                </ul>
+
+             <li><h4>Database Programming</h4>
+                <ul>
+                  <li>SQL Server</li>
+                  <li>MySQL</li>
+                </ul>
+              </li>
+
+             <li><h4>Functional Programming</h4>
+                <ul>
+                  <li>Scheme</li>
+                </ul>
+              </li>
+
+            </ul>
+          </p> 
+        </div>
+        <hr>
+    </div>
+    
+    <script>
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+          // Avoid following the href location when clicking
+          event.preventDefault();
+          // Avoid having the menu to close when clicking
+          event.stopPropagation();
+          // If a menu is already open we close it
+          $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+          // opening the one you clicked on
+          $(this).parent().addClass('open');
+        
+        var menu = $(this).parent().find("ul");
+        var menupos = $(menu).offset();
+
+        if (menupos.left + menu.width() > $(window).width()) {
+            var newpos = -$(menu).width();
+            menu.css({ left: newpos });    
+        } else {
+            var newpos = $(this).parent().width();
+            menu.css({ left: newpos });
+        }
+        
+        
+    });
+    </script>
+</body>
 
 </html>
