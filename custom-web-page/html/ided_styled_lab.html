@@ -1,16 +1,12 @@
 <!--
-TITLE: JS Hello World Lab
+TITLE: IDED & Styled Lab
 AUTHOR: Blake Conrad
 CREATE DATE: Jan 06 2017
 PURPOSE: 
 LAST MODIFIED ON: Jan 08 2016
 LAST MODIFIED BY: Blake Conrad
 MODIFICATION HISTORY:
-~ JAN 06 2016 ~ Lauched the site.
-~ JAN 07 2016 ~ Edited the image buffering.
-~ JAN 08 2016 ~ Updated the site to be w3 compatible.
-~ JAN 10 2016 ~ Updated to be w3 verifiable.
-~ Jan 17 2016 ~ Official commit -- upadted with link to IDED & Styled lab to communicate back and forth.
+~ JAN 17 2016 initial commit
 -->
 <!DOCTYPE html>
 <html>
@@ -25,13 +21,7 @@ MODIFICATION HISTORY:
         <link rel="stylesheet" type="text/css" href="../css/mySite.css">
         <link rel="stylesheet" type="text/css" href="../css/navBar.css">
         <link rel="stylesheet" type="text/css" href="../css/container.css">
-
-        <!-- INCLUDE JQ -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-        </script>
-
-        <!-- INCLUDE JS -->
-        <script type="text/javascript" src="../js/externalAlert.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/ided_style_lab.css">
     </head>
     
     <body>
@@ -51,7 +41,7 @@ MODIFICATION HISTORY:
                 <li class="active dropdown"><a href="#">Projects</a>
                     <div class="dropdown-content">
                         <ul>
-                           <li>
+                            <li>
                                 <a href="ided_styled_lab.html">
                                     IDED &amp; Styled Lab
                                 </a> 
@@ -145,7 +135,21 @@ MODIFICATION HISTORY:
         <div class="header-container">
         </div>
         <div class="container">
-            <h2>Hit the home button to head upstairs to the lobby where the free coffee is at!</h2>
+            <div id="coffee"><img src="../images/coffee3.png"
+                                  alt=""
+                                  height="65" 
+                                  width="65"></div>
+            <div id="coffee-color"><img src="../images/coffee4.png"
+                                        alt=""
+                                        height="65"
+                                        width="65"></div>
         </div>
+        
+        
+        <!-- INCLUDE JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+
+        <!-- INCLUDE JS -->
     </body>
 </html>

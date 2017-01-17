@@ -25,14 +25,6 @@ MODIFICATION HISTORY:
         <link rel="stylesheet" type="text/css" href="css/navBar.css">
         <link rel="stylesheet" type="text/css" href="css/container.css">
 
-        <!-- INCLUDE JQ -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-        </script>
-
-         <!-- INCLUDE JS -->
-        <script type="text/javascript" src="js/hover.js"></script>
-        <script type="text/javascript" src="js/mySite.js"></script>
-        <script type="text/javascript" src="js/dropdown.js"></script>
     </head>
     
     <body>
@@ -48,21 +40,21 @@ MODIFICATION HISTORY:
                            onmouseenter="startImageCycle(this)"
                            onmouseout="stopImageCycle(this)"></li>
                 <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
-                <li class="active"><a href="mySite.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 
                 <!-- Dropdown Menu onHover -->
                 <li class="dropdown"><a href="#">Projects</a>
                     <div class="dropdown-content">
                         <ul>
                             <li>
-                                <a href="#">
-                                    Week 1 ( Lab 1 )
+                                <a href="html/ided_styled_lab.html">
+                                    IDED &amp; Styled Lab
                                 </a> 
                             </li>
 
                             <li>
-                                <a href="#">
-                                    Week 2 ( Lab 2 )
+                                <a href="html/js_hello_world.html">
+                                    JS Hello World Lab
                                 </a> 
                             </li>
                             <li>
@@ -169,13 +161,21 @@ MODIFICATION HISTORY:
             </div>
         </div>
     
-         <!-- Create Half Container -->
-        <div class="container">
-            <div class="home">
-                <h2> <a href="html/test_file.html">Blake's Test File</a> </h2>
-                <h2> <a href="html/js_hello_world.html">Blake's JS Alert </a> </h2>
-            </div>
-        </div><div class="half-left">
+        <div class="half-left">
+            <script>
+                /*
+                var node = document.createElement("li");
+                var textNode = document.createTextNode("TROLLOL");
+                node.appendChild(textNode);
+                document.getElementById("my-half-container").appendChild(node);
+                */
+            </script>
         </div>
+        
+    <!-- INCLUDE JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hover.js"></script>
+        <script type="text/javascript" src="js/mySite.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
     </body>
 </html>
