@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/custom_js.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
@@ -21,11 +21,12 @@
      style="border-radius:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Blake Conrad</a>
+      <a class="navbar-brand" href="../index.html">Blake Conrad</a>
+        
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">About</a></li>
-      <li><a href="html/reservation.html">Reservation</a></li>
+      <li><a href="../index.html">About</a></li>
+      <li class="active"><a href="html/reservation.html">Reservation</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
         <span class="caret"></span></a>
@@ -48,7 +49,7 @@
             </li>
             
             <li role="separator" class="divider"></li>
-            <li class="dropdown-header"></li>
+            <li class="dropdown-header">University</li>
             
             <li class="dropdown-submenu">
                 <a class="dropdown-toggle"
@@ -110,45 +111,50 @@
   </div>
 </nav>
 
-    <div class="container">
-      <div class="jumbotron"
-           style="background-color:#F0F8FF;">
-        <h2>Hi, I'm Blake.</h2> 
-          <hr style="border-color:black;">
-          <p>
-            <h4>Education:</h4>
-            <button id="education-btn"
-                    class="btn btn-success"
-                    type="button" 
-                    onclick="appendText(this);"
-                    style="background-color:#483D8B;border-color:black;">+</button>
-        <div id="appendHere">    </div>
-          <hr style="border-color:black;">
-         <h4>Hobbies:</h4>
-          <button id="hobbies-btn"
-                  type="button" 
-                  class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
-          <div id="appendHere2">
-          </div>
+		<div class="container">
+            <div class="row main"
+                 style="margin-left:25%;margin-right:25%">
+                <div class="panel-heading">
+                   <div class="panel-title text-center">
+                        <h1 class="title">You're Invited to Blake's Graduation!</h1>
+                        <h5><em>Signing up allows for a head count of how many people will be attending for seating reservations.</em></h5>
+                        <hr style="border-color:black;">
+                    </div>
+                </div> 
+                <div class="main-login main-center">
+                    <form class="form-horizontal" method="post" action="#">
 
-        
-          <hr style="border-color:black;">
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                                </div>
+                            </div>
+                        </div>
 
-          <h4>Language Exposure:</h4>
-          <button id="prog-lang-btn"
-                  type="button" 
-                  class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
-          <div id="appendHere3"></div>
-          <hr style="border-color:black;">
-          </p> 
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr style="border-color:black;">
+                        
+                        <div class="form-group ">
+                            <button type="button" 
+                                    class="btn btn-primary btn-lg btn-block login-button"
+                                    style="background-color:#483D8B;border-color:none;">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    
     <script>
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
           // Avoid following the href location when clicking
