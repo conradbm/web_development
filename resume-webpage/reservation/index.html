@@ -1,22 +1,8 @@
-<!-- 
-Things that need worked on next:
 
-1. Put all the styling into separate CSS Sheets.
-2. Put all styles into a separate JS Sheet.
-3. Make a better navbar, the buttons 'POP' on hover.
-4. Make the button shimmer on hover, or at least pop a bit.
-5. Make the dropdown menu nicer.
-
-1. Add the Version Control list to custom_js:
-    1. Git
-    2. CVS
-2. Update: Machine Learning, Data Mining, Data Science, and Data Analytics Programming
-3. Add web development as a hobby for CS
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Blake Conrad</title>
+    <title>Blake's Graduation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/coffee.png">
@@ -24,7 +10,8 @@ Things that need worked on next:
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/custom_js.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <?php include "../mailer.php"; ?>
 </head>
 
 <body style="background-color:#F0F8FF;">
@@ -34,11 +21,12 @@ Things that need worked on next:
      style="border-radius:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Blake Conrad</a>
+      <a class="navbar-brand" href="../index.html">Blake Conrad</a>
+        
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">About</a></li>
-      <li class="navbar-item"><a href="reservation/index.html">Reservation</a></li>
+      <li><a href="../index.html">About</a></li>
+      <li class="active"><a href="html/index.html">Reservation</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
         <span class="caret"></span></a>
@@ -61,7 +49,7 @@ Things that need worked on next:
             </li>
             
             <li role="separator" class="divider"></li>
-            <li class="dropdown-header"></li>
+            <li class="dropdown-header">University</li>
             
             <li class="dropdown-submenu">
                 <a class="dropdown-toggle"
@@ -123,56 +111,67 @@ Things that need worked on next:
   </div>
 </nav>
 
-    <div class="container">
-      <div class="jumbotron"
-           style="background-color:#F0F8FF;">
-        <h2>Hi, I'm Blake.</h2> 
-          <hr style="border-color:black;">
-          <p>
-            <h4>Education:</h4>
-            <button id="education-btn"
-                    class="btn btn-success shimmer"
-                    type="button" 
-                    onclick="appendText(this);"
-                    style="background-color:#483D8B;border-color:black;">+</button>
-        <div id="appendHere">    </div>
-          <hr style="border-color:black;">
-         <h4>Hobbies:</h4>
-          <button id="hobbies-btn"
-                  type="button" 
-                  class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
-          <div id="appendHere2">
-          </div>
+		<div class="container">
+            <div class="row main"
+                 style="margin-left:25%;margin-right:25%">
+                <div class="panel-heading">
+                   <div class="panel-title text-center">
+                        <h1 class="title">You're Invited to Blake's Graduation!</h1>
+                        <h5><em>Signing up allows for a head count of how many people will be attending for seating reservations.</em></h5>
+                        <hr style="border-color:black;">
+                    </div>
+                </div> 
+                
+                <div id="successAppend"></div>
+                
+                <div class="main-login main-center">
+                    <form class="form-horizontal"
+                          method="post" 
+                          action="mailer.php"
+                          id="submitForm">
 
-        
-          <hr style="border-color:black;">
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="name" id="userName"  placeholder="Enter your Name"/>
+                                </div>
+                            </div>
+                        </div>
 
-          <h4>Language Exposure:</h4>
-          <button id="prog-lang-btn"
-                  type="button" 
-                  class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
-          <div id="appendHere3"></div>
-          <hr style="border-color:black;">
-          </p> 
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="userEmail"  placeholder="Enter your Email"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr style="border-color:black;">
+                        
+                        <div class="form-group ">
+                            <button id="sendEmailButton"
+                                    type="submit" 
+                                    class="btn btn-primary btn-lg btn-block login-button"
+                                    style="background-color:#483D8B;border-color:none;">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    
     <script>
-        
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
           // Avoid following the href location when clicking
-        event.preventDefault();
+          event.preventDefault();
           // Avoid having the menu to close when clicking
-        event.stopPropagation();
+          event.stopPropagation();
           // If a menu is already open we close it
-        $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+          $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
           // opening the one you clicked on
-        $(this).parent().addClass('open');
+          $(this).parent().addClass('open');
         
         var menu = $(this).parent().find("ul");
         var menupos = $(menu).offset();
@@ -184,8 +183,48 @@ Things that need worked on next:
             var newpos = $(this).parent().width();
             menu.css({ left: newpos });
         }
+        
+        
     });
     </script>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+            $('#submitForm').submit(function(e){
+                e.preventDefault(); // Prevent Default Submission
+
+                $.ajax({
+                    url: 'mailer.php',
+                    type: 'POST',
+                    data: $(this).serialize(), // it will serialize the form data
+                    dataType: 'html'
+                    })
+                .done(function(data){
+                 $('#submitForm').fadeOut('slow', function(){ 
+                      $('#submitForm').fadeIn('slow').html(data);
+                    });
+                })
+                .fail(function(){
+                     alert('Ajax Submit Failed ...'); 
+                });
+            });
+       
+    });
+    </script>
+    
+    <script>
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            <h1 class="title">You're Invited to Blake's Graduation!</h1>
+            $(".title").find('h1').replaceWith(function() {
+                return '<h2>' + $(this).text() + '</h2>';
+            });
+        }
+    </script>
+            
+    
+    
 </body>
 
 </html>
