@@ -1,12 +1,12 @@
 <!--
-TITLE: Multi Writes Lab
+TITLE: Functions Lab
 AUTHOR: Blake Conrad
 CREATE DATE: Jan 06 2017
 PURPOSE: 
 LAST MODIFIED ON: Jan 08 2016
 LAST MODIFIED BY: Blake Conrad
 MODIFICATION HISTORY:
-~ JAN 20 2016 initial commit
+~ JAN 31 2016 initial commit
 -->
 <!DOCTYPE html>
 <html>
@@ -22,15 +22,6 @@ MODIFICATION HISTORY:
         <link rel="stylesheet" type="text/css" href="../css/navBar.css">
         <link rel="stylesheet" type="text/css" href="../css/container.css">
         <link rel="stylesheet" type="text/css" href="../css/ided_style_lab.css">
-        
-        
-        <!-- INCLUDE JQ -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-        </script>
-
-        <!-- INCLUDE JS -->
-       <script type="text/javascript" src="../js/text_edit.js"></script>
-
         
     </head>
     
@@ -146,32 +137,21 @@ MODIFICATION HISTORY:
         </div>
         <div class="container">
             <div class="home">
-                    <h2> Multi Writes Lab </h2>
+                    <h2> Functions Lab </h2>
                     <hr> <!-- Draw a horizontal line -->
-                    <h4> This Lab showed me 
-                            <ul>
-                                <li>How to <em>pre-load</em> a function by including it's script.</li>
-                                <li>Pass an object to a function, then let logic decide it's fate.</li>
-                                <li>Familiarity with editing DOM elements and tags.</li>
-                            </ul>
-                    </h4>
-                <hr>
-
+                    <br>
+                <div id="appendHere" ></div>
             </div>
-                <button id="documentwrite" 
-                        type="button"
-                        onclick="Choice(this);">document_write</button>
-                <button id="textcontent"
-                        type="button"
-                        onclick="Choice(this);">textContent</button>
-                <button id="innerhtml"
-                        type="button"
-                        onclick="Choice(this);">innerHTML</button>
-                <h3 id="experiment">THE EXPERIMENT</h3>
-    
+            
         </div>
         
         
+        <!-- INCLUDE JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+
+        <!-- INCLUDE JS -->
+       <script type="text/javascript" src="../js/functions_lab.js"></script>
 
     </body>
 </html>
