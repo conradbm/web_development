@@ -10,9 +10,10 @@ Things that need worked on next:
 1. Add the Version Control list to custom_js:
     1. Git
     2. CVS
-2. Update: Machine Learning, Data Mining, Data Science, and Data Analytics Programming
+2. Update: Machine Learning, Data Mining, Data Science Programming
 3. Add web development as a hobby for CS
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +24,12 @@ Things that need worked on next:
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/custom_js.js"></script>
+    <script src="js/buttonDropDowns.js"></script>
+    <script src="js/navbar.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="background-color:#F0F8FF;">
+<body>
 
 
 <nav class="navbar navbar-inverse"
@@ -124,68 +126,61 @@ Things that need worked on next:
 </nav>
 
     <div class="container">
-      <div class="jumbotron"
-           style="background-color:#F0F8FF;">
+      <div class="jumbotron">
         <h2>Hi, I'm Blake.</h2> 
-          <hr style="border-color:black;">
+          <hr>
           <p>
             <h4>Education:</h4>
             <button id="education-btn"
                     class="btn btn-success shimmer"
                     type="button" 
-                    onclick="appendText(this);"
-                    style="background-color:#483D8B;border-color:black;">+</button>
+                    onclick="appendText(this);">+</button>
         <div id="appendHere">    </div>
-          <hr style="border-color:black;">
+          <hr>
          <h4>Hobbies:</h4>
           <button id="hobbies-btn"
                   type="button" 
                   class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
+                  onclick="appendText(this);">+</button>
           <div id="appendHere2">
           </div>
 
         
-          <hr style="border-color:black;">
+          <hr>
 
           <h4>Language Exposure:</h4>
           <button id="prog-lang-btn"
                   type="button" 
                   class="btn btn-success"
-                  onclick="appendText(this);"
-                  style="background-color:#483D8B;border-color:black;">+</button>
+                  onclick="appendText(this);">+</button>
           <div id="appendHere3"></div>
-          <hr style="border-color:black;">
+          <hr>
           </p> 
         </div>
-        
-    </div>
-    
-    <script>
-        
-    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-          // Avoid following the href location when clicking
-        event.preventDefault();
-          // Avoid having the menu to close when clicking
-        event.stopPropagation();
-          // If a menu is already open we close it
-        $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
-          // opening the one you clicked on
-        $(this).parent().addClass('open');
-        
-        var menu = $(this).parent().find("ul");
-        var menupos = $(menu).offset();
+        <script>
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                  // Avoid following the href location when clicking
+                event.preventDefault();
+                  // Avoid having the menu to close when clicking
+                event.stopPropagation();
+                  // If a menu is already open we close it
+                $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+                  // opening the one you clicked on
+                $(this).parent().addClass('open');
 
-        if (menupos.left + menu.width() > $(window).width()) {
-            var newpos = -$(menu).width();
-            menu.css({ left: newpos });    
-        } else {
-            var newpos = $(this).parent().width();
-            menu.css({ left: newpos });
-        }
-    });
-    </script>
+                var menu = $(this).parent().find("ul");
+                var menupos = $(menu).offset();
+
+                if (menupos.left + menu.width() > $(window).width()) {
+                    var newpos = -$(menu).width();
+                    menu.css({ left: newpos });    
+                } else {
+                    var newpos = $(this).parent().width();
+                    menu.css({ left: newpos });
+                }
+            });
+        </script>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+body{ background-color:#F0F8FF; }
+.container hr { border-color:black;}
+.container .jumbotron{ background-color:#F0F8FF; }
+.container .jumbotron hr{ border-color:black;}
+.container .jumbotron button { background-color:#483D8B; border-color:black;}
+.container .main {margin-left:25%; margin-right:25% }
+.container button { background-color:#483D8B; border-color:none;}
+
+/**
+ * The "shine" element
+ */
+

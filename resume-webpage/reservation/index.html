@@ -5,7 +5,7 @@
     <title>Blake's Graduation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/coffee.png">
+    <link rel="icon" href="../images/celbrate.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,7 +14,7 @@
     <?php include "../mailer.php"; ?>
 </head>
 
-<body style="background-color:#F0F8FF;">
+<body>
 
 
 <nav class="navbar navbar-inverse"
@@ -112,13 +112,12 @@
 </nav>
 
 		<div class="container">
-            <div class="row main"
-                 style="margin-left:25%;margin-right:25%">
+            <div class="row main">
                 <div class="panel-heading">
                    <div class="panel-title text-center">
                         <h1 class="title">You're Invited to Blake's Graduation!</h1>
                         <h5><em>Signing up allows for a head count of how many people will be attending for seating reservations.</em></h5>
-                        <hr style="border-color:black;">
+                        <hr>
                     </div>
                 </div> 
                 
@@ -150,13 +149,12 @@
                             </div>
                         </div>
                         
-                        <hr style="border-color:black;">
+                        <hr>
                         
-                        <div class="form-group ">
+                        <div class="form-group">
                             <button id="sendEmailButton"
                                     type="submit" 
-                                    class="btn btn-primary btn-lg btn-block login-button"
-                                    style="background-color:#483D8B;border-color:none;">Register</button>
+                                    class="btn btn-primary btn-lg btn-block login-button">Register</button>
                         </div>
                     </form>
                 </div>
@@ -215,12 +213,6 @@
     </script>
     
     <script>
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            <h1 class="title">You're Invited to Blake's Graduation!</h1>
-            $(".title").find('h1').replaceWith(function() {
-                return '<h2>' + $(this).text() + '</h2>';
-            });
-        }
     </script>
             
     
