@@ -1,0 +1,11 @@
+a{
+    color: inherit;
+}
+
+body, p, li, a{
+    font-family:Georgia;
+}
+
+p{
+    font-size:16px;
+}

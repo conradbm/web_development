@@ -26,65 +26,47 @@ Things that need worked on next:
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/buttonDropDowns.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
-
-<body>
 
 
 <nav class="navbar navbar-inverse"
      style="border-radius:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Blake Conrad</a>
+      <a class="navbar-brand" href="index.html">Blake Conrad</a>
+        
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">About</a></li>
-      <li class="navbar-item"><a href="reservation/index.html">Reservation</a></li>
+        <!-- <li class="divider-vertical"></li> -->
+      <li><a href="#">About</a></li>
+
+        
+        
+        
+        <!--  First Drop Down-->
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
             
             <li role="separator" class="divider"></li>
-            <li class="dropdown-header">Social Networking</li>
-            
+            <li class="dropdown-header">Code Repository</li>
             <li>
                 <a href="https://github.com/conradbm"
                    target="_blank">
                     GitHub
                 </a>
             </li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Social Networking</li>
             <li>
                 <a href="https://www.linkedin.com/in/blake-conrad-5b240a123?trk=hp-identity-photo"
                    target="_blank">
                 Linked-In
                 </a>
-            </li>
-            
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header"></li>
-            
-            <li class="dropdown-submenu">
-                <a class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="#">
-                    IUPUI <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-item">
-                        <a href="https://cs.iupui.edu/"
-                           target="_blank">
-                            IUPUI Computer Science
-                        </a>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="https://cs.iupui.edu/~bmconrad/n341"
-                           target="_blank">
-                            CSCI N341 Client Side Web Programming Course Site
-                        </a>
-                    </li>
-                </ul>
             </li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Community</li>
@@ -102,21 +84,72 @@ Things that need worked on next:
                         </a>
                     </li>
                     <li class="dropdown-item">
-                        <a href="http://stats.stackexchange.com/users/142748/bmc"
-                           target="_blank">
-                            Statistics Stack Exchange
-                        </a>
-                    </li>
-                    <li class="dropdown-item">
                         <a href="http://stackoverflow.com/users/4304526/bmc"
                            target="_blank">
-                            Stackoverflow
+                            Stack Exchange
                         </a>
                     </li>
                 </ul>
             </li>
         </ul>
       </li>
+        
+        
+        
+        
+        <!-- Second Drop Down -->
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Project Space
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Mail Server</li>
+                <li class="navbar-item"><a href="reservation/index.html">Graduation Reservation</a></li>
+                
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Data Pipelines</li>
+                <li class="navbar-item"><a href="bible_api/index.html">Bible API</a></li>
+                
+                <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Data Science</li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#">
+                            Data Visualizations <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-item">
+                                <a href="data_science_plots/data_visualization/index.html"
+                                   target="_blank">
+                                    Replication Plots
+                                </a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="data_science_plots/data_visualization/kmeans_pca.html"
+                                   target="_blank">
+                                    K-means &amp; PCA
+                                </a>
+                            </li>
+                            
+                            <li class="dropdown-item">
+                                <a href="data_science_plots/data_visualization/blog.html"
+                                   target="_blank">
+                                    Blog Post
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Data Mining</li>
+                <li class="navbar-item"><a href="data_mining/pca/index.html">Dimensionality Reduction</a></li>
+            </ul>
+        </li>
+        
+        
+        
     </ul>
       
     <ul class="nav navbar-nav navbar-right">
@@ -157,30 +190,10 @@ Things that need worked on next:
           <hr>
           </p> 
         </div>
-        <script>
-            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-                  // Avoid following the href location when clicking
-                event.preventDefault();
-                  // Avoid having the menu to close when clicking
-                event.stopPropagation();
-                  // If a menu is already open we close it
-                $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
-                  // opening the one you clicked on
-                $(this).parent().addClass('open');
 
-                var menu = $(this).parent().find("ul");
-                var menupos = $(menu).offset();
-
-                if (menupos.left + menu.width() > $(window).width()) {
-                    var newpos = -$(menu).width();
-                    menu.css({ left: newpos });    
-                } else {
-                    var newpos = $(this).parent().width();
-                    menu.css({ left: newpos });
-                }
-            });
-        </script>
     </div>
+    
+
 </body>
 
 </html>

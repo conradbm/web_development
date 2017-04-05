@@ -1,11 +1,15 @@
 /*
+Things to update:
 
+Add the K-means ipynb
+Add the Naive/Baysian Classifier ipynb
+Add the twitter text analysis ipynb
+
+Update dates and times for my graduation
 */
-
 $(document).ready(function(){
-    
-});
 
+});
 
 var edu_btn = true;
 var hobbies_btn = true;
@@ -22,7 +26,7 @@ function appendText(btn) {
         });
         
 
-        var education_item = $("<div class='container'><ul><li><h4>Academic</h4><ul><li>B.S. in Computer Science from <a href='http://www.purdue.edu/' target='_blank'>Purdue University</a>.</li><li>Minor in Mathematics.</li></li></ul></ul><ul><li><h4>Professional</h4><ul><li>Developed new solutions to large scale software projects in an internship with the <a href='http://www.trac.army.mil/' target='_blank'>Department of Defense</a>.</li></li></ul></div>").hide();
+        var education_item = $("<div class='container'><ul><li><h4>Academic</h4><ul><li>B.S. in Computer Science from <a href='http://www.purdue.edu/' target='_blank'>Purdue University</a></li><li>Minor in Mathematics</li></li></ul></ul><ul><li><h4>Professional</h4><ul><li>Recruited by the <a href='http://www.trac.army.mil/' target='_blank'>Department of Defense</a> as a <a href=\"http://smart.asee.org/\" target=\"_blank\">S.M.A.R.T Scholar</a> </li><li>Awarded the <em>2016 Excellence in Analysis Award</em> for contributions in <em>Network Analysis</em> and <em>Wargaming Simulation</em> tools support, software development, and project analysis</li></li></ul></div>").hide();
         $('#appendHere').append(education_item);
         //new_item.show('fast');
         education_item.slideDown();
@@ -59,7 +63,7 @@ function appendText(btn) {
             return oldText === '+' ? '-' : oldText;
         });
         
-        var hobbies_item = $("<div class='container'><ul><li><h4>Computed Science Related</h4><ul><li>Competing in <a href='https://www.kaggle.com/bmconrad' target='_blank'>Kaggle Competitions</a>.</li><li>Contributing to <a href='http://stackoverflow.com/users/4304526/bmc' target='_blank'>Stack Exchange Communities</a>.</li><li>Web Development (Dynamic web pages, Javascript, JQuery, and PHP specifically).</li></ul> </li><li><h4>Non-Computer Science Related</h4><ul><li>Learning new ways to utilize my skills to help those around me in a <a href='http://indymeals.com' target='_blank'> meaningful way.</a></li><li>Understanding how I can help those around me <a href='https://www.facebook.com/The-Creative-Change-Project-303593586466151/' target='_blank'>in need.</a></li></ul></li></ul></div>").hide();
+        var hobbies_item = $("<div class='container'><ul><li><h4>Computed Science Related</h4><ul><li>Competing in <a href='https://www.kaggle.com/bmconrad' target='_blank'>Kaggle Competitions</a>(Text analysis, high quality predictions, ect..).</li><li>Contributing to <a href='http://stackoverflow.com/users/4304526/bmc' target='_blank'>Stack Exchange Communities</a>.</li><li>Web Development (Dynamic web pages, Javascript, JQuery, and PHP specifically).</li></ul> </li><li><h4>Community Related</h4><ul><li>Support and analysis to find solutions to habits and patterns regarding <a href='https://www.facebook.com/The-Creative-Change-Project-303593586466151/' target='_blank'> homelessness in Indianapolis</a></li><li>Contributed to database support with <a href='https://www.facebook.com/The-Creative-Change-Project-303593586466151/' target='_blank'>The Creative Change Project</a> to detect long term solutions to fighting homelessness in Indianapolis</li></ul></li></ul></div>").hide();
         
         $('#appendHere2').append(hobbies_item);
         
@@ -91,7 +95,7 @@ function appendText(btn) {
             return oldText === '+' ? '-' : oldText;
         });
         
-        var prog_lang_item = $("<div class='container'><ul><li><h4>Object Oriented Programming</h4><ul><li>C</li><li>C++</li><li>Python</li><li>Java</li></ul></li><li><h4>Machine Learning, Data Mining &amp; Data Science Programming</h4><ul><li>Python (<a href='http://ipython.org/notebook.html' target='_blank'> IPython Notebook</a>, <a href='http://www.numpy.org' target='_blank'> NumPy</a>, <a href='http://pandas.pydata.org' target='_blank'> Pandas</a>, <a href='http://scipy.org/scipylib/index.html' target='_blank'>SciPy</a>, <a href='http://scikit-learn.org/stable/' target='_blank'>Scikit-learn </a>, and <a href='http://matplotlib.org' target='_blank'>Matplotlib</a> libraries) </li><li>R (<a href='https://github.com/topepo/caret' target='_blank'>caret</a>, <a href='https://github.com/yhat/ggplot' target='_blank'>ggplot2</a>, <a href='https://stat.ethz.ch/R-manual/R-patched/library/stats/html/glm.html' target='_blank'>Generalized Logistic Models</a>, <a href='https://cran.r-project.org/web/packages/randomForest/index.html' target='_blank'> Random Forest Models</a>, and <a href='https://cran.r-project.org/web/packages/AppliedPredictiveModeling/index.html' target='_blank'>other predictive modeling packages</a>)</li><li><a ref='http://www.mathworks.com/' target=‘_blank’>MATLAB</a></li></ul></li><li><h4>Procedural Scripting Programming</h4><ul><li>Batch (MS-DOS/Windows)</li><li>Bash (Unix/MAC)</li><li>Cshell (Linux)</li></ul></li><li><h4>Version Control Programming</h4><ul><li>Git</li><li>CVS</li></ul></li><li><h4>Internet Programming</h4><ul><li>HTML5</li><li>CSS3</li><li>Javascript</li><li>JQuery</li><li>Bootstrap</li><li>PHP</li><li>AJAX</li></ul><li><h4>Mobile Programming</h4><ul><li>Objective-C (iOS/Xcode)</li></ul></li><li><h4>Database Programming</h4><ul><li>SQL Server</li><li>MySQL</li></ul></li><li><h4>Functional Programming</h4><ul><li>Scheme</li></ul></li></ul></ul></ul></div>").hide();
+        var prog_lang_item = $("<div class='container'><ul><li><h4>Object Oriented Programming</h4><ul><li>C</li><li>C++</li><li>Python</li><li>Java</li></ul></li><li><h4>Machine Learning, Data Mining, &amp; Data Science Programming</h4><ul><li>Python (<a href='http://ipython.org/notebook.html' target='_blank'> IPython Notebook</a>, <a href='http://www.numpy.org' target='_blank'> NumPy</a>, <a href='http://pandas.pydata.org' target='_blank'> Pandas</a>, <a href='http://scipy.org/scipylib/index.html' target='_blank'>SciPy</a>, <a href='http://scikit-learn.org/stable/' target='_blank'>Scikit-learn </a>, and <a href='http://matplotlib.org' target='_blank'>Matplotlib</a> libraries) </li><li>R (<a href='https://github.com/topepo/caret' target='_blank'>caret</a>, <a href='https://github.com/yhat/ggplot' target='_blank'>ggplot2</a>, <a href='https://stat.ethz.ch/R-manual/R-patched/library/stats/html/glm.html' target='_blank'>Generalized Logistic Models</a>, <a href='https://cran.r-project.org/web/packages/randomForest/index.html' target='_blank'> Random Forest Models</a>, and <a href='https://cran.r-project.org/web/packages/AppliedPredictiveModeling/index.html' target='_blank'>other predictive modeling packages</a>)</li><li><a ref='http://www.mathworks.com/' target=‘_blank’>MATLAB</a></li></ul></li><li><h4>Procedural Scripting Programming</h4><ul><li>Batch (MS-DOS/Windows)</li><li>Bash (Unix/MAC)</li><li>C-Shell (Linux)</li></ul></li><li><h4>Version Control Programming</h4><ul><li>Git</li><li>CVS</li></ul></li><li><h4>Internet Programming</h4><ul><li>HTML5</li><li>CSS3</li><li>Javascript</li><li>JQuery</li><li>Bootstrap</li><li>PHP</li><li>AJAX</li></ul><li><h4>Mobile Programming</h4><ul><li>Objective-C (iOS/Xcode)</li></ul></li><li><h4>Database Programming</h4><ul><li>SQL Server</li><li>MySQL</li></ul></li><li><h4>Functional Programming</h4><ul><li>Scheme</li></ul></li></ul></ul></ul></div>").hide();
         
         
         

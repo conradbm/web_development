@@ -1,17 +1,33 @@
+<!-- 
+Things that need worked on next:
+
+1. Put all the styling into separate CSS Sheets.
+2. Put all styles into a separate JS Sheet.
+3. Make a better navbar, the buttons 'POP' on hover.
+4. Make the button shimmer on hover, or at least pop a bit.
+5. Make the dropdown menu nicer.
+
+1. Add the Version Control list to custom_js:
+    1. Git
+    2. CVS
+2. Update: Machine Learning, Data Mining, Data Science Programming
+3. Add web development as a hobby for CS
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Blake's Graduation</title>
+    <title>Blake Conrad</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../images/celbrate.jpg">
+    <link rel="icon" href="../images/coffee.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/buttonDropDowns.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/bible_api_pull.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
-    <?php include "../mailer.php"; ?>
 </head>
 
 <body>
@@ -22,11 +38,10 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="../index.html">Blake Conrad</a>
-        
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="../index.html">About</a></li>
-              <!--  First Drop Down-->
+      <li class="navbar-item"><a href="../index.html">About</a></li>
+        <!--  First Drop Down-->
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
         <span class="caret"></span></a>
@@ -63,6 +78,7 @@
                             Kaggle
                         </a>
                     </li>
+
                     <li class="dropdown-item">
                         <a href="http://stackoverflow.com/users/4304526/bmc"
                            target="_blank">
@@ -85,11 +101,11 @@
 
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Mail Server</li>
-                <li class="navbar-item"><a href="index.html">Graduation Reservation</a></li>
+                <li class="navbar-item"><a href="../reservation/index.html">Graduation Reservation</a></li>
                 
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Data Pipelines</li>
-                <li class="navbar-item"><a href="../bible_api/index.html">Bible API</a></li>
+                <li class="navbar-item"><a href="bible_api/index.html">Bible API</a></li>
 
                 <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Data Science</li>
@@ -137,60 +153,44 @@
     </ul>
   </div>
 </nav>
-
+    
     <div class="container">
         <div class="jumbotron"></div>
     </div>
-		<div class="container">
-            <div class="row main">
-                <div class="panel-heading">
-                   <div class="panel-title text-center">
-                        <h1 class="title">You're Invited to Blake's Graduation!</h1>
-                        <h5><em>Signing up allows for a head count of how many people will be attending for seating reservations.</em></h5>
-                        <hr>
-                    </div>
-                </div> 
-                
-                <div id="successAppend"></div>
-                
-                <div class="main-login main-center">
-                    <form class="form-horizontal"
-                          method="post" 
-                          action="mailer.php"
-                          id="submitForm">
-
-                        <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Your Name</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="name" id="userName"  placeholder="Enter your Name"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" class="cols-sm-2 control-label">Your Email</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="email" id="userEmail"  placeholder="Enter your Email"/>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <hr>
-                        
-                        <div class="form-group">
-                            <button id="sendEmailButton"
-                                    type="submit" 
-                                    class="btn btn-primary btn-lg btn-block login-button">Register</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     
+    <div class="container">
+        <div class="jumbotron">
+            <form id="target" class="form-inline" action="" method="">
+                  <label class="sr-only" for="inlineFormInput">Book</label>
+                  <input id="bookInput" name="bookId" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Search book ...">
+
+                  <label class="sr-only" for="inlineFormInput">Chapter</label>
+                  <input id="chapterInput" name="chapterId" type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Search chapter ...">
+                
+
+                  <button type="submit" class="btn btn-primary" style="">Submit</button>
+                  <img src="../images/ajax-loader.gif" id="loading-indicator" style="display:none;position:absolute;top:"+$(window).height()/2+"px;left:"+$(window).width()/2+"px;" />
+            </form>
+            
+            <hr>
+            
+            <div id="scripture"> </div>
+        </div>
+    </div>
+
 </body>
 
+    
+    
 </html>
+   
+    
+
+
+
+
+
+
+
+
+
