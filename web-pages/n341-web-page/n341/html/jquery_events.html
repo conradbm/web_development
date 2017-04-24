@@ -1,0 +1,179 @@
+<!--
+TITLE: Jquery events lab
+AUTHOR: Blake Conrad
+CREATE DATE: March 27 2017
+PURPOSE: 
+LAST MODIFIED ON: March 20 2017
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ March 27 2017 initial commit
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blake Conrad</title>
+        
+        <!-- GENERAL HOUSEKEEPING -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+        <!-- INCLUDE CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/mySite.css">
+        <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+        <link rel="stylesheet" type="text/css" href="../css/container.css">
+        <link rel="stylesheet" type="text/css" href="../css/a.css">
+        
+        
+        <!-- INCLUDE JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+
+        <!-- INCLUDE JS -->
+       <script type="text/javascript" src="../js/jquery_events.js"></script>
+
+        
+    </head>
+    
+    <body>
+        
+        <!-- Create Custom Navigation Bar-->
+        <div class="navBar" id="myNavBar">    
+            <ul class="navOptions">
+                <li> <img id="logo" 
+                          src="../images/coffee2.png"
+                          height="65"
+                          width="65"
+                          alt=""></li>
+                <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
+                <li><a href="../index.html">Home</a></li>
+                
+                <!-- Create Dropdown Menu onHover -->
+                <li class="active dropdown"><a href="#">Projects</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="ided_styled_lab.html">
+                                    IDED &amp; Styled Lab
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="js_hello_world.html">
+                                    JS Hello World Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="multi_writes_lab.html">
+                                    Multi Writes Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="conversation_lab.html">
+                                    Conversation Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="functions_lab.html">
+                                    Functions Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="randomness_lab.html">
+                                    Randomness Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="arrays_lab.html">
+                                    Arrays and Looping Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="ahoy_jquery_lab.html">
+                                    Ahoy JQuery Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 9 ( Lab 9 )
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Week 10 ( Lab 10 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 11 ( Lab 11 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 12 ( Lab 12 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 13 ( Lab 13 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 14 ( Lab 14 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 15 ( Lab 15 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 16 ( Lab 16 )
+                                </a> 
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+        
+        <div class="header-container">
+        </div>
+        <div class="container">
+            <div class="home">
+                    <h2> JQuery events lab </h2>
+                    <hr> <!-- Draw a horizontal line -->
+                
+                <!-- 10 different elements -->
+                <ul class="the_list">
+                    <li class="list_item" id="item_1">item 1</li>
+                    <li class="list_item" id="item_2">item 2</li>
+                    <li class="list_item" id="item_3">item 3</li>
+                    <li class="list_item" id="item_4">item 4</li>
+                    <li class="list_item" id="item_5">item 5</li>
+                    <li class="list_item" id="item_6">item 6</li>
+                    <li class="list_item" id="item_7">item 7</li>
+                    <li class="list_item" id="item_8">item 8</li>
+                    <li class="list_item" id="item_9">item 9</li>
+                </ul>
+                
+                <button id="button_1">Modify By Tag Name</button>
+                <button id="button_2">Modify By Class Name</button>
+                <button id="button_3">Modify By Id</button>
+                <button id="button_4">Apply Chaining In Jquery</button>
+                <button id="button_5">Filter By Tag</button>
+                <button id="button_6">Filter By Class</button>
+                <button id="button_7">Filter By Id</button>
+            </div>
+    
+        </div>
+        
+        
+
+    </body>
+</html>

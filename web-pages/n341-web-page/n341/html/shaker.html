@@ -1,0 +1,188 @@
+<!--
+TITLE: Shaker
+AUTHOR: Blake Conrad
+CREATE DATE: March 27 2017
+PURPOSE: 
+LAST MODIFIED ON: March 20 2017
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ March 27 2017 initial commit
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blake Conrad</title>
+        
+        <!-- GENERAL HOUSEKEEPING -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+        <!-- INCLUDE CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/mySite.css">
+        <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+        <link rel="stylesheet" type="text/css" href="../css/container.css">
+        <link rel="stylesheet" type="text/css" href="../css/a.css">
+        
+        
+        <!-- INCLUDE JQ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+
+        <!-- INCLUDE JS -->
+       <script type="text/javascript" src="../js/shaker.js"></script>
+
+        
+    </head>
+    
+    <body>
+        
+        <!-- Create Custom Navigation Bar-->
+        <div class="navBar" id="myNavBar">    
+            <ul class="navOptions">
+                <li> <img id="logo" 
+                          src="../images/coffee2.png"
+                          height="65"
+                          width="65"
+                          alt=""></li>
+                <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
+                <li><a href="../index.html">Home</a></li>
+                
+                <!-- Create Dropdown Menu onHover -->
+                <li class="active dropdown"><a href="#">Projects</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="ided_styled_lab.html">
+                                    IDED &amp; Styled Lab
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="js_hello_world.html">
+                                    JS Hello World Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="multi_writes_lab.html">
+                                    Multi Writes Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="conversation_lab.html">
+                                    Conversation Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="functions_lab.html">
+                                    Functions Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="randomness_lab.html">
+                                    Randomness Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="arrays_lab.html">
+                                    Arrays and Looping Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="ahoy_jquery_lab.html">
+                                    Ahoy JQuery Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 9 ( Lab 9 )
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Week 10 ( Lab 10 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 11 ( Lab 11 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 12 ( Lab 12 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 13 ( Lab 13 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 14 ( Lab 14 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 15 ( Lab 15 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 16 ( Lab 16 )
+                                </a> 
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+        
+        <div class="header-container">
+        </div>
+        <div class="container">
+            <div class="home">
+                    <h2> Shaker lab</h2>
+                    <hr> <!-- Draw a horizontal line -->
+                    <button id="showbtn" >Show</button>
+                    <button id="hidebtn" >Hide</button>
+                    <button id="togglebtn">Toggle</button>
+                    <button id="slideupbtn">SlideUp</button>
+                    <button id="slidedownbtn">SlideDown</button>
+                    <button id="fadeinbtn">Fade-in</button>
+                    <button id="fadeoutbtn">Fade-out</button>
+                    <div id="clickme">
+                      <p>Hello</p>
+                        <p style="display: none">Good Bye</p>
+                        <div class="quiet" style="background: #f00;
+                                                   margin: 3px;
+                                                    width: 80px;
+                                                    display: none;
+                                                    height: 80px;
+                                                    float: left;">
+                        </div>
+                        <div class="quiet" style="background: #0f0;
+                                                   margin: 3px;
+                                                    width: 80px;
+                                                    display: none;
+                                                    height: 80px;
+                                                    float: left;"></div>
+                        <div class="quiet" style="background: #00f;
+                                                   margin: 3px;
+                                                    width: 80px;
+                                                    display: none;
+                                                    height: 80px;
+                                                    float: left;"></div>
+                    </div>
+            </div>
+        </div>
+
+
+        
+
+    </body>
+</html>

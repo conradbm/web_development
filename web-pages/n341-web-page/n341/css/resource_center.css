@@ -1,0 +1,60 @@
+#header{
+    width:100%;
+    height:10%;
+    background-color:darkseagreen;
+    border-radius:10px;
+}
+
+#header h2{
+    padding-top:5px;
+    margin-left:1%;
+    font-family:monospace;
+    font-size: 28px;
+    margin-bottom:0px;
+}
+#header h3{
+    margin-left:1%;
+    font-family:monospace;
+    font-size: 14px;
+    margin-top:0px;
+}
+
+#tabs{
+    margin-top:1%;
+    border-radius:10px;
+    margin-bottom:2%;
+}
+
+#commentForm{
+    margin-top:0px;
+    background-color:darkseagreen;
+    border-radius:10px;
+}
+
+
+body{
+    font: 80% "Trebuchet MS", sans-serif;
+    margin: 50px;
+}
+
+#commentForm {
+    margin: 25px;			/* Set margin of form */
+    width: 500px;			/* Set width of form */
+    position: absolute;
+}
+#commentForm fieldset {
+    padding: 15px;			/* Put some space between the form edge and the content */
+}
+#commentForm label {
+    width: 250px;			/* Set width of form labels */
+}
+#commentForm label.error {
+    margin-left: 5px;		/* Indent error messages - used in validator */
+}
+#spinner{				/* Spinner */
+    width: 70px;
+}
+
+#results {		/* Output area */
+    margin-left: 550px;
+}

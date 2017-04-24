@@ -1,0 +1,195 @@
+<!--
+TITLE: Web Page Redux Assignment 1
+AUTHOR: Blake Conrad
+CREATE DATE: Jan 06 2017
+PURPOSE: 
+LAST MODIFIED ON: Jan 08 2016
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ JAN 06 2016 ~ Lauched the site.
+~ JAN 07 2016 ~ Edited the image buffering.
+~ JAN 08 2016 ~ Updated the site to be w3 compatible.
+~ JAN 10 2016 ~ Updated to be w3 verifiable.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blake Conrad</title>
+        
+        <!-- GENERAL HOUSEKEEPING -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- INCLUDE CSS -->
+        <link rel="stylesheet" type="text/css" href="css/mySite.css">
+        <link rel="stylesheet" type="text/css" href="css/navBar.css">
+        <link rel="stylesheet" type="text/css" href="css/container.css">
+        
+        <!-- INCLUDE JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hover.js"></script>
+        <script type="text/javascript" src="js/mySite.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
+    </head>
+    
+    <body>
+        
+         <!-- Create Custom Navigation Bar -->
+        <div class="navBar" id="myNavBar">    
+            <ul class="navOptions">
+                <li> <img id="logo" 
+                          src="images/coffee2.png"
+                          height="65"
+                          width="65"
+                          alt=""
+                           onmouseenter="startImageCycle(this)"
+                           onmouseout="stopImageCycle(this)"></li>
+                <li id="myName"><h3>CSCI N-341</h3><br><h5>Blake Conrad</h5></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                
+                <!-- Dropdown Menu onHover -->
+                <li class="dropdown"><a href="#">Projects</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>
+                                <a href="html/ided_styled_lab.html">
+                                    IDED &amp; Styled Lab
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="html/js_hello_world.html">
+                                    JS Hello World Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/multi_writes_lab.html">
+                                    Multi Writes Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/conversation_lab.html">
+                                    Conversation Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/functions_lab.html">
+                                    Functions Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/randomness_lab.html">
+                                    Randomness Lab
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html/iffy_lab.html">
+                                    Iffy Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/more_iffy_lab.html">
+                                    More Iffy Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/arrays_lab.html">
+                                    Arrays and Looping
+                                </a> 
+                            </li>
+
+                            <li>
+                                <a href="html/strings_lab.html">
+                                    Strings Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/buttons_lab.html">
+                                    Buttons (Bonus) Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/ahoy_jquery_lab.html">
+                                    Ahoy JQuery Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/pickme_lab.html">
+                                    Pick Me Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/jquery_events.html">
+                                    JQuery Events
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/triggered.html">
+                                    Triggered Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/shaker.html">
+                                    Shaker Lab
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="html/resource_center.html">
+                                    Data Science Resource Center
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 16 ( Lab 16 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 16 ( Lab 16 )
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Week 16 ( Lab 16 )
+                                </a> 
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resources</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="addResponsiveFunction()">&#9776;</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+         <!-- Create Header Container -->
+        <div class="header-container">
+        </div>
+        
+        <!-- Create Full Container -->
+        <div class="container">
+            <div class="home">
+                    <h2> The Lobby </h2>
+                    <hr> <!-- Draw a horizontal line -->
+                    <h4>Grab some coffee, it's on the house.</h4>
+                    <h4>We hope you enjoy your stay.</h4> 
+                    <h5> &nbsp;&nbsp;&nbsp;&nbsp; - Staff of Team Blake Conrad&copy;.</h5> 
+                    <img style="padding-left:1%;"
+                         src="images/coffee.png"
+                         alt=""
+                         height="65" 
+                         width="65">
+            </div>
+        </div>
+    
+        <div class="half-left">
+
+        </div>
+        
+
+    </body>
+</html>

@@ -1,0 +1,4 @@
+$username = “id551612_mydatabase”
+$servername = “localhost”;
+$port = 3306
+$tableName = “BibleQuerySearch”

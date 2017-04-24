@@ -1,0 +1,153 @@
+<!--
+TITLE: Data Science Resource Center
+AUTHOR: Blake Conrad
+CREATE DATE: April 22 2017
+PURPOSE: 
+LAST MODIFIED ON: April 22 2017
+LAST MODIFIED BY: Blake Conrad
+MODIFICATION HISTORY:
+~ March 20 2017 initial commit
+~ March 24 2017 scrape form
+~ April 22 2017 clean up scraped form
+-->
+
+<!DOCTYPE html>
+    <head>
+      <title>Blake Conrad Final Project</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+
+
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+      <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+      <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+      <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
+
+        <link rel="stylesheet" href="../css/resource_center.css">
+        <script type="text/javascript" src="../js/resource_center.js"></script>
+        
+    </head>
+    
+    
+    
+<body>
+ 
+    <div id="header">
+        <h2> Data Science Resource Center</h2>
+        <h3> Where science meets the streets</h3>
+    </div>
+
+    <div id="tabs">
+      <ul>
+        <li><a href="#fragment-1"><span>Who we are</span></a></li>
+        <li><a href="#fragment-2"><span>What we do</span></a></li>
+        <li><a href="#fragment-3"><span>How we do it</span></a></li>
+      </ul>
+      <div id="fragment-1">
+        <p>We are a company of indivduals who love to science. We hope to see all humans acquire a surreal experience of science.</p>
+      </div>
+      <div id="fragment-2">
+        This is where science hits the streets. Real problems. Real solutions. Real people impacted for good. 
+      </div>
+      <div id="fragment-3">
+        We gotta mix a little magic with the secret sause ... science. We know it sounds odd, but when it hits the streets, we know what the outcome looks like. 
+      </div>
+    </div>
+
+ 
+<form class="cmxform" id="commentForm">
+  <fieldset>
+    <legend><h3>Please enter your information below</h3></legend>
+      <hr>
+      <h3>Required Fields:</h3>
+      
+    <p>
+      <label for="cname">Name</label>
+      <input id="cname" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+        <label for="cpassword">Password</label>
+        <input id="cpassword" name="password" minlength="2" type="text" required>
+    </p>
+    <p>
+        <label for="ctel">Telephone</label>
+        <input id="ctel" name="tel" pattern="[0-9]{10}" minlength="10" type="tel" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail</label>
+      <input id="cemail" type="email" name="email" required>
+    </p>
+
+      
+    <p>
+        <p>Date (required): <input name="date" type="text" id="datepicker" required digits></p>
+    </p>
+    <p>
+      <label for="ccomment">Your comment</label>
+      <textarea id="ccomment" name="comment" required></textarea>
+    </p>
+    <p>
+      <label for="spinner">How much do you love science?</label>
+      <input id="spinner" name="spinner" pattern="[0-9]" required digits>    
+    </p>
+    <p>
+        How old are you? <br>
+        <input id="radio1" type="radio" name="group1" value="10-20" required/>10-20<br>
+        <input id="radio2" type="radio" name="group1" value="21-30"/>21-30<br>
+        <input id="radio3" type="radio" name="group1" value="31-40"/>31-40<br>
+      <br>
+        <!-- You can select any one from each group -->
+
+        What experience level are you? <br>
+        <input id="radio4" type="radio" name="group2" value="Noob"/> Noob <br>
+        <input id="radio5" type="radio" name="group2" value="Nerd"/> Nerd <br>
+        <input id="radio6" type="radio" name="group2" value="Wizard"/> Wizard<br>
+      <br>
+      <br>
+
+        
+    <div class="ui-widget">
+      <label for="tags">Favorite Language? (optional) </label>
+      <input id="tags" name="tags" required>
+    </div>
+    <p>
+
+      <hr>
+      <h3>Optional Fields:</h3>
+    
+    <p>
+        <input id="checkBoxItem" type="checkbox" name="myCheckBox" value="Do you participate in Kaggle Competitions?"> Do you participate in Kaggle Competitions?  
+    </p><br>
+      <label for="curl">URL (optional)</label>
+      <input id="curl" type="url" name="url">
+    </p>
+    <p>
+      <label for="aoi">Area of Interest (optional)</label>
+      <input id="aoi" type="text" name="aoi">
+    </p>
+    <p>
+      <label for="currprobs">Current Problems (optional)</label>
+      <input id="currprobs" type="text" name="currprobs">
+    </p>
+
+    <p>
+      <input id="launch" name="submitInput" type="submit" value="Submit">
+    </p>
+    <p>
+        <input id="resetBtn" name="resetInput" type="submit" value="Reset">
+    </p>
+  </fieldset>
+</form>
+    <br>
+    <div id="results">
+    </div>
+  
+
+</body>
+</html>
