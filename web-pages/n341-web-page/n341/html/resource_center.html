@@ -68,15 +68,15 @@ MODIFICATION HISTORY:
       <h3>Required Fields:</h3>
       
     <p>
-      <label for="cname">Name</label>
+      <label for="cname">Name (At least 2 characters)</label>
       <input id="cname" name="name" minlength="2" type="text" required>
     </p>
     <p>
-        <label for="cpassword">Password</label>
+        <label for="cpassword">Password (at least 2 characters)</label>
         <input id="cpassword" name="password" minlength="2" type="text" required>
     </p>
     <p>
-        <label for="ctel">Telephone</label>
+        <label for="ctel">Telephone (10 digits including area code)</label>
         <input id="ctel" name="tel" pattern="[0-9]{10}" minlength="10" type="tel" required>
     </p>
     <p>
@@ -86,14 +86,14 @@ MODIFICATION HISTORY:
 
       
     <p>
-        <p>Date (required): <input name="date" type="text" id="datepicker" required digits></p>
+        <p>Date: <input name="date" type="text" id="datepicker" required digits></p>
     </p>
     <p>
       <label for="ccomment">Your comment</label>
       <textarea id="ccomment" name="comment" required></textarea>
     </p>
     <p>
-      <label for="spinner">How much do you love science?</label>
+      <label for="spinner">How much do you love science? (Any number from 0 to 10)</label>
       <input id="spinner" name="spinner" pattern="[0-9]" required digits>    
     </p>
     <p>
@@ -113,7 +113,7 @@ MODIFICATION HISTORY:
 
         
     <div class="ui-widget">
-      <label for="tags">Favorite Language? (optional) </label>
+      <label for="tags">Favorite Language?</label>
       <input id="tags" name="tags" required>
     </div>
     <p>
@@ -124,15 +124,15 @@ MODIFICATION HISTORY:
     <p>
         <input id="checkBoxItem" type="checkbox" name="myCheckBox" value="Do you participate in Kaggle Competitions?"> Do you participate in Kaggle Competitions?  
     </p><br>
-      <label for="curl">URL (optional)</label>
+      <label for="curl">URL</label>
       <input id="curl" type="url" name="url">
     </p>
     <p>
-      <label for="aoi">Area of Interest (optional)</label>
+      <label for="aoi">Area of Interest</label>
       <input id="aoi" type="text" name="aoi">
     </p>
     <p>
-      <label for="currprobs">Current Problems (optional)</label>
+      <label for="currprobs">Current Problems</label>
       <input id="currprobs" type="text" name="currprobs">
     </p>
 
