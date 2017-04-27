@@ -9,6 +9,8 @@ MODIFICATION HISTORY:
 ~ March 20 2017 initial commit
 ~ March 24 2017 scrape form
 ~ April 22 2017 clean up scraped form
+~ April 26 2017 test page
+
 -->
 
 <!DOCTYPE html>
@@ -27,7 +29,6 @@ MODIFICATION HISTORY:
       <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
       <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
       <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-      <script type="text/javascript" src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
 
         <link rel="stylesheet" href="../css/resource_center.css">
         <script type="text/javascript" src="../js/resource_center.js"></script>
@@ -60,7 +61,7 @@ MODIFICATION HISTORY:
       </div>
     </div>
 
- 
+    <h2><a href="results.xlsx" download> Testing Results</a></h2>
 <form class="cmxform" id="commentForm">
   <fieldset>
     <legend><h3>Please enter your information below</h3></legend>
@@ -84,17 +85,17 @@ MODIFICATION HISTORY:
       <input id="cemail" type="email" name="email" required>
     </p>
 
-      
-    <p>
-        <p>Date: <input name="date" type="text" id="datepicker" required digits></p>
-    </p>
+
+        <p>Date: <input name="date" type="text" id="datepicker" required></p>
+
     <p>
       <label for="ccomment">Your comment</label>
       <textarea id="ccomment" name="comment" required></textarea>
     </p>
+      
     <p>
       <label for="spinner">How much do you love science? (Any number from 0 to 10)</label>
-      <input id="spinner" name="spinner" pattern="[0-9]" required digits>    
+      <input id="spinner" name="spinner" pattern="[0-9]" required>    
     </p>
     <p>
         How old are you? <br>
@@ -117,16 +118,15 @@ MODIFICATION HISTORY:
       <input id="tags" name="tags" required>
     </div>
     <p>
-
-      <hr>
-      <h3>Optional Fields:</h3>
-    
     <p>
         <input id="checkBoxItem" type="checkbox" name="myCheckBox" value="Do you participate in Kaggle Competitions?"> Do you participate in Kaggle Competitions?  
     </p><br>
+      <hr>
+      <h3>Optional Fields:</h3>
+    
+
       <label for="curl">URL</label>
       <input id="curl" type="url" name="url">
-    </p>
     <p>
       <label for="aoi">Area of Interest</label>
       <input id="aoi" type="text" name="aoi">
@@ -147,7 +147,10 @@ MODIFICATION HISTORY:
     <br>
     <div id="results">
     </div>
-  
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+
 
 </body>
+
 </html>

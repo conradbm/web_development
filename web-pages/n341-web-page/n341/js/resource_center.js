@@ -10,26 +10,11 @@ MODIFICATION HISTORY:
 ~ March 24 2017 scrape form
 ~ April 22 2017 clean up scraped form
 ~ April 24 2017 work on custom form checking
-*/
-
-
-/*
-This submissions requirements:
-
-Create a complete version of your form with a professional appearance   5.0 pts
-
-Functions use block documentation and are commented well    2.0 pts
-
-Files contain proper header block documentation     2.0 pts
-jQuery validation plugin is properly used to ensure that no fields are left empty   4.0 pts
-
-jQuery validation plugin is properly used to ensure that only numeric responses are accepted in numeric fields.     2.0 pts
-
-Display all form entry problems to the user in a functional way.    5.0 pts
-Submit button accurately echoes data only after it passes validation    5.0 pts
-Total Points: 25.0
+~ April 26 2017 running tests
 
 */
+
+
 $(document).ready(function(){
         
     /* Declare all of the rules and messages for the validation form */
@@ -255,8 +240,8 @@ $(document).ready(function(){
         if($("#radio3").prop('checked')){
            $("#results").append("<p>Age group 3:  " + $("#radio3").prop("value") + "</p>"); 
         }
-        if($("#checkBoxItem").prop('checked')){
-            $("#checkBoxItem").append("<p>It looks like you do like competing in Kaggle Competitions.</p>");
+        if($("#checkBoxItem").is(':checked')){
+            $("#results").append("<p>It looks like you do like competing in Kaggle Competitions.</p>");
         }
         
         
